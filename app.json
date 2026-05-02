@@ -1,0 +1,19 @@
+{
+  "expo": {
+    "name": "Chiva",
+    "slug": "chiva",
+    "version": "1.0.0",
+    "orientation": "portrait",
+    "icon": "./assets/icon.png",
+    "userInterfaceStyle": "automatic",
+    "assetBundlePatterns": [
+      "**/*"
+    ],
+    "ios": {
+      "bundleIdentifier": "com.swevazquez.chiva",
+      "buildNumber": "1",
+      "icon": "./assets/icon.png",
+      "supportsTablet": false
+    }
+  }
+}
