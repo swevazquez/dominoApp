@@ -13,7 +13,10 @@
       "bundleIdentifier": "com.swevazquez.chiva",
       "buildNumber": "1",
       "icon": "./assets/icon.png",
-      "supportsTablet": false
+      "supportsTablet": false,
+      "infoPlist": {
+        "ITSAppUsesNonExemptEncryption": false
+      }
     },
     "android": {
       "package": "com.swevazquez.chiva",
@@ -21,6 +24,11 @@
       "adaptiveIcon": {
         "foregroundImage": "./assets/adaptive-icon.png",
         "backgroundColor": "#06111f"
+      }
+    },
+    "extra": {
+      "eas": {
+        "projectId": "98e2670d-29e9-418c-a8d0-ea1775a4be30"
       }
     }
   }
