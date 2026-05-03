@@ -1,5 +1,7 @@
 # Chiva iOS Release Checklist
 
+For Android release steps, see [Chiva Android Release Checklist](android-release-checklist.md).
+
 ## One-Time Setup
 
 - Confirm Apple Developer Program access.
