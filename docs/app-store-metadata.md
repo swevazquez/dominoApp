@@ -1,5 +1,7 @@
 # Chiva App Store Metadata
 
+For Google Play listing copy, see [Chiva Play Store Metadata](play-store-metadata.md).
+
 ## App Information
 
 - App name: Chiva

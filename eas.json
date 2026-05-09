@@ -6,6 +6,9 @@
   "build": {
     "production": {
       "distribution": "store",
+      "android": {
+        "autoIncrement": true
+      },
       "ios": {
         "autoIncrement": true
       }
@@ -13,6 +16,7 @@
   },
   "submit": {
     "production": {
+      "android": {},
       "ios": {}
     }
   }
