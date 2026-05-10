@@ -16,7 +16,9 @@
   },
   "submit": {
     "production": {
-      "android": {},
+      "android": {
+        "track": "beta"
+      },
       "ios": {}
     }
   }
