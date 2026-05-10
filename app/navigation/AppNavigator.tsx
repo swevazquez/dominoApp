@@ -1,10 +1,12 @@
 import { createBottomTabNavigator } from "@react-navigation/bottom-tabs";
 import { createNativeStackNavigator } from "@react-navigation/native-stack";
+import { Platform } from "react-native";
+import { useSafeAreaInsets } from "react-native-safe-area-context";
 import { GameScreen } from "@app/screens/GameScreen";
 import { HistoryScreen } from "@app/screens/HistoryScreen";
 import { SettingsScreen } from "@app/screens/SettingsScreen";
 import { GameSummaryScreen } from "@app/screens/GameSummaryScreen";
-import { colors } from "@app/components/theme";
+import { colors, spacing } from "@app/components/theme";
 
 export type RootStackParamList = {
   Tabs: undefined;
@@ -15,21 +17,34 @@ const Tab = createBottomTabNavigator();
 const Stack = createNativeStackNavigator<RootStackParamList>();
 
 function Tabs() {
+  const insets = useSafeAreaInsets();
+  const bottomInset = Math.max(insets.bottom, Platform.OS === "android" ? 36 : 0);
+
   return (
     <Tab.Navigator
       screenOptions={{
         headerShown: false,
+        tabBarHideOnKeyboard: true,
         tabBarStyle: {
           backgroundColor: colors.background,
           borderTopColor: colors.border,
           borderTopWidth: 1,
-          minHeight: 72,
-          paddingBottom: 12,
-          paddingTop: 8
+          height: 68 + bottomInset,
+          paddingBottom: bottomInset + spacing.md,
+          paddingTop: spacing.sm
+        },
+        tabBarItemStyle: {
+          justifyContent: "center",
+          paddingVertical: 0
+        },
+        tabBarIconStyle: {
+          display: "none"
         },
         tabBarLabelStyle: {
           fontSize: 12,
-          fontWeight: "800"
+          fontWeight: "800",
+          lineHeight: 16,
+          marginBottom: 0
         },
         tabBarActiveTintColor: colors.blue,
         tabBarInactiveTintColor: colors.muted

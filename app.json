@@ -6,8 +6,34 @@
     "orientation": "portrait",
     "icon": "./assets/icon.png",
     "userInterfaceStyle": "automatic",
+    "splash": {
+      "image": "./assets/splashScreen.png",
+      "resizeMode": "cover",
+      "backgroundColor": "#06111f"
+    },
     "assetBundlePatterns": [
       "**/*"
+    ],
+    "plugins": [
+      [
+        "expo-splash-screen",
+        {
+          "backgroundColor": "#06111f",
+          "image": "./assets/splashScreen.png",
+          "resizeMode": "cover",
+          "enableFullScreenImage_legacy": true,
+          "android": {
+            "backgroundColor": "#06111f",
+            "image": "./assets/splashScreen.png",
+            "resizeMode": "cover"
+          },
+          "ios": {
+            "backgroundColor": "#06111f",
+            "image": "./assets/splashScreen.png",
+            "resizeMode": "cover"
+          }
+        }
+      ]
     ],
     "ios": {
       "bundleIdentifier": "com.swevazquez.chiva",
@@ -21,6 +47,16 @@
     "android": {
       "package": "com.swevazquez.chiva",
       "versionCode": 1,
+      "statusBar": {
+        "backgroundColor": "#06111f",
+        "barStyle": "light-content",
+        "translucent": false
+      },
+      "splash": {
+        "image": "./assets/splashScreen.png",
+        "resizeMode": "cover",
+        "backgroundColor": "#06111f"
+      },
       "adaptiveIcon": {
         "foregroundImage": "./assets/adaptive-icon.png",
         "backgroundColor": "#06111f"
