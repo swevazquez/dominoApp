@@ -2,7 +2,6 @@ package com.swevazquez.chiva
 
 import android.os.Build
 import android.os.Bundle
-import android.view.WindowManager
 import androidx.core.view.WindowCompat
 
 import com.facebook.react.ReactActivity
@@ -17,14 +16,8 @@ class MainActivity : ReactActivity() {
     // Set the theme to AppTheme BEFORE onCreate to support
     // coloring the background, status bar, and navigation bar.
     // This is required for expo-splash-screen.
-    setTheme(R.style.AppTheme);
+    setTheme(R.style.AppTheme)
     WindowCompat.setDecorFitsSystemWindows(window, true)
-    window.statusBarColor = getColor(R.color.app_background)
-    window.navigationBarColor = getColor(R.color.app_background)
-    if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.P) {
-      window.attributes.layoutInDisplayCutoutMode =
-          WindowManager.LayoutParams.LAYOUT_IN_DISPLAY_CUTOUT_MODE_DEFAULT
-    }
     super.onCreate(null)
   }
 

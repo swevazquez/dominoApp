@@ -3,7 +3,7 @@
     "name": "Chiva",
     "slug": "chiva",
     "version": "1.0.0",
-    "orientation": "portrait",
+    "orientation": "default",
     "icon": "./assets/icon.png",
     "userInterfaceStyle": "automatic",
     "splash": {
@@ -47,11 +47,6 @@
     "android": {
       "package": "com.swevazquez.chiva",
       "versionCode": 1,
-      "statusBar": {
-        "backgroundColor": "#06111f",
-        "barStyle": "light-content",
-        "translucent": false
-      },
       "splash": {
         "image": "./assets/splashScreen.png",
         "resizeMode": "cover",

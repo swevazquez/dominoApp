@@ -7,9 +7,6 @@
     <item name="android:windowDrawsSystemBarBackgrounds">true</item>
     <item name="android:windowFullscreen">false</item>
     <item name="android:windowLightStatusBar">false</item>
-    <item name="android:windowLayoutInDisplayCutoutMode" tools:targetApi="28">default</item>
-    <item name="android:statusBarColor">@color/app_background</item>
-    <item name="android:navigationBarColor">@color/app_background</item>
   </style>
   <style name="Theme.App.SplashScreen" parent="AppTheme">
     <item name="android:windowBackground">@drawable/splash_screen_background</item>
